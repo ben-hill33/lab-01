@@ -1,0 +1,91 @@
+@import url('reset.css');
+@import url('layouts.css');
+@import url('modules.css');
+
+*{
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+
+body {
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%
+  
+}
+
+div {
+  width: 90%;
+  margin: 0% auto;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+div:after {
+  /* content: ""; */
+  display: block;
+  clear: both;
+}
+
+.a {
+  min-height: 75px;
+}
+
+.b {
+  min-height: 150px;
+}
+
+.c, .d {
+  min-height: 125px;
+}
+
+.pair-container {
+  overflow: auto;
+  border: none;
+}
+
+.e, .f, .g, .h {
+  min-height: 250px;
+  float: left;
+  width: 50%;
+}
+
+.i {
+  min-height: 140px;
+}
+
+@media (min-width: 768px) {
+
+  body {
+    background-color: olivedrab;
+  }
+
+  .b {
+    min-height: 600px;
+    width: 20%;
+    float: left;
+    margin-left: 5%
+  }
+
+  .c, .d {
+    min-height: 200px;
+    width: 35%;
+    float: left;
+    overflow: auto;
+  }
+
+  .pair-container {
+    min-height: 250px;
+    width: 35%;
+    float: left;
+    overflow: auto;
+  }
+
+  .i {
+    margin-top: 140px;
+    clear: right;
+  }
+}
