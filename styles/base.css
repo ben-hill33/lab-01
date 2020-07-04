@@ -2,90 +2,172 @@
 @import url('layouts.css');
 @import url('modules.css');
 
-*{
+* {
   box-sizing: border-box;
   /* background-color: black; */
 }
 
-body {
-  text-align: center;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%
-  
-}
-
 div {
-  width: 90%;
-  margin: 0% auto;
   text-align: center;
-  vertical-align: middle;
-
+  font-size: 24px;
+  border: solid black 1px;
+  margin: 0px;
+  padding: 0px;
 }
 
-div:after {
-  /* content: ""; */
-  display: block;
-  clear: both;
+.wrapper {
+  grid-template-rows: repeat(14, 50px);
+  width: 484px;
+  margin: 0 auto;
 }
 
 .a {
-  min-height: 75px;
+  width: 480px;
+  height: 75px;
+  background-color: grey;
+  line-height: 75px;
 }
 
 .b {
-  min-height: 150px;
-}
-
-.c, .d {
-  min-height: 125px;
-}
-
-.pair-container {
-  overflow: auto;
-  border: none;
-}
-
-.e, .f, .g, .h {
-  min-height: 250px;
+  width: 480px;
+  height: 150px;
+  background-color: grey;
+  line-height: 150px;
   float: left;
-  width: 50%;
+}
+
+.c {
+  width: 480px;
+  height: 125px;
+  background-color: grey;
+  line-height: 125px;
+  float: left;
+}
+
+.d {
+  width: 480px;
+  height: 125px;
+  background-color: grey;
+  line-height: 125px;
+  float: left;
+}
+
+.e {
+  width: 240px;
+  height: 250px;
+  background-color: grey;
+  line-height: 240px;
+  float: left;
+}
+
+.f {
+  width: 240px;
+  height: 250px;
+  background-color: grey;
+  line-height: 240px;
+  float: left;
+}
+
+.g {
+  width: 240px;
+  height: 250px;
+  background-color: grey;
+  line-height: 240px;
+  float: left;
+}
+
+.h {
+  width: 240px;
+  height: 250px;
+  background-color: grey;
+  line-height: 240px;
+  float: left;
 }
 
 .i {
-  min-height: 140px;
+  width: 480px;
+  height: 80px;
+  background-color: grey;
+  line-height: 80px;
+  float: left;
 }
 
-@media (min-width: 768px) {
-
-  body {
-    background-color: olivedrab;
+@media only screen and (min-width: 660px) {
+  * {
+    box-sizing: border-box;
   }
-
+  div {
+    text-align: center;
+    font-size: 24px;
+    border: solid black 1px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .wrapper {
+    grid-template-rows: repeat(14, 50px);
+    width: 964px;
+    margin: 0 auto;
+  }
+  .a {
+    width: 960px;
+    height: 100px;
+    background-color: grey;
+    line-height: 100px;
+  }
   .b {
-    min-height: 600px;
-    width: 20%;
+    width: 200px;
+    height: 600px;
+    background-color: grey;
+    line-height: 600px;
     float: left;
-    margin-left: 5%
   }
-
-  .c, .d {
-    min-height: 200px;
-    width: 35%;
+  .c {
+    width: 380px;
+    height: 200px;
+    background-color: grey;
+    line-height: 200px;
     float: left;
-    overflow: auto;
   }
-
-  .pair-container {
-    min-height: 250px;
-    width: 35%;
+  .d {
+    width: 380px;
+    height: 200px;
+    background-color: grey;
+    line-height: 200px;
     float: left;
-    overflow: auto;
   }
-
+  .e {
+    width: 190px;
+    height: 250px;
+    background-color: grey;
+    line-height: 250px;
+    float: left;
+  }
+  .f {
+    width: 190px;
+    height: 250px;
+    background-color: grey;
+    line-height: 250px;
+    float: left;
+  }
+  .g {
+    width: 190px;
+    height: 250px;
+    background-color: grey;
+    line-height: 250px;
+    float: left;
+  }
+  .h {
+    width: 190px;
+    height: 250px;
+    background-color: grey;
+    line-height: 250px;
+    float: left;
+  }
   .i {
-    margin-top: 140px;
-    clear: right;
+    width: 760px;
+    height: 150px;
+    background-color: grey;
+    line-height: 100px;
+    float: left;
   }
 }
